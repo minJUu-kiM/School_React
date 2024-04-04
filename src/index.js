@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Heading from './components/Heading';
+import Arithmetic from './components/Arithmetic';
+import Summarize from './components/Summarize';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Heading>Basic Level</Heading>
+    <Arithmetic/>
+    <hr />
+    <Summarize data = {[4,11,17,21,9]}/>
   </React.StrictMode>
 );
 
